@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.image {
+    width: auto;
+    height: auto;;
+    position: relative;
+    margin: 0;
+}
+
+.image > img {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+}
+
+#title {
+    width: 50%;
+    height: auto;
+    margin: 0;
+    background-color: rgba(0, 128, 128, 0.274);
+    text-align: center;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
+
+h1 {
+    font-family: 'Lucida Handwriting';
+    margin: auto;
+    color: white;
+}
+
+#hotbar {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    background-color:rgba(0, 128, 128, 0.5);
+    justify-content: space-around;
+}
+
+#hotbar > div {
+    width: auto;
+    height: min-content;
+    border-style: none solid none solid;
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: larger;
+    transition-duration: .4s;
+}
+
+#hotbar > div:hover {
+    padding: 10px 50px 10px 50px;
+    background-color: #509b9fe3;
+    cursor: pointer;
+    color: white;
+}
+
+#content {
+    width: 100%;
+    height: auto;
+}
+
+.text{
+    width: 100%;
+    height: 150px;
+    background-color: #79c4c7bf;
+    text-align: center;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text > p {
+    margin: 0;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Papyrus";
+    font-style: italic;
+}
+
+.parallax {
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dropdown {
+    width: 300px;
+    height: 75px;
+    margin: auto;
+    text-align: center;
+    background-color:#247578a6;
+    border-radius: 50px;
+    font-family: 'Lucida Handwriting';
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+.over {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    transform: translateY(-100%);
+    border-radius: inherit;
+    overflow: hidden;
+    background-color: #c7f587a2;
+    transition-duration: 0.1s;
+}
+
+#overlay-contact {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    transform: translateX(-100%);
+    background-color: #002e3175;
+    z-index: 3;
+    transition-duration: 0.2s;
+    overflow: hidden;
+}
+
+#overlay-contact > div {
+    width: 75%;
+    height: 75%;
+    position: relative;
+    top: 10%;
+    border-style: solid;
+    margin: auto;
+    background-color: #002e3190;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: large;
+    text-align: center;
+    overflow: hidden;
+}
+
+#overlay-contact > div > form {
+    border-style: solid;
+    margin: auto;
+}
+
+#overlay-contact > div input {
+    width: 200px;
+    height: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: large;
+}
+
+#overlay-contact-close {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 5%;
+    left: 95%;
+}
+
+#overlay-contact-message {
+    width: auto;
+    height: 0px;
+    overflow: hidden;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    margin: auto;
+    transition-duration: 0.2s;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+#footer {
+    width: 100%;
+    height: 400px;
+    background-color: lightslategray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#footer > div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer a, #footer h2 {
+    margin: 0;
+    color: white;
+}
